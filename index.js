@@ -49,7 +49,7 @@ const parameters =[
 ];
 
 function write_svg(file_name, data){
-    fs.writeFile(file_name, data, (err) =>{
+    fs.writeFile(`./example/${file_name}`, data, (err) =>{
        err ? console.log(err) : console.log("Generated logo.svg")
     })
 }
