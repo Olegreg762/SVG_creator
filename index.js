@@ -1,5 +1,3 @@
-const height = 300;
-const width = 200;
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generate_svg = require("./lib/shapes")
@@ -18,6 +16,12 @@ function validate_input_length(input){
 };
 
 const parameters =[
+    {
+        type: "input",
+        name: "name",
+        message: "What is The Name of Your Logo?",
+        validate: validate_input
+    },
     {
         type: "list",
         name: "shape",
@@ -53,7 +57,7 @@ function write_svg(file_name, data){
 function init(){
     inquirer.prompt(parameters).then(data => {
         console.log(data);
-        write_svg("example.svg",generate_svg(data))
+        write_svg(`${data.name}.svg`,generate_svg(data))
     })
 }
 init()
