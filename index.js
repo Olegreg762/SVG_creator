@@ -1,7 +1,8 @@
 const height = 300;
 const width = 200;
-const inquirer = require("inquirer")
-const fs = require("fs")
+const inquirer = require("inquirer");
+const fs = require("fs");
+const generate_svg = require("./lib/shapes")
 
 function validate_input(input){
     if(input == ""){
@@ -31,6 +32,12 @@ const parameters =[
     },
     {
         type: "input",
+        name: "font",
+        message: "What would you like the Font Color to be?",
+        validate: validate_input
+    },
+    {
+        type: "input",
         name: "logo",
         message: "Please Enter the 3 Letter Logo",
         validate: validate_input_length
@@ -46,6 +53,7 @@ function write_svg(file_name, data){
 function init(){
     inquirer.prompt(parameters).then(data => {
         console.log(data);
+        write_svg("example.svg",generate_svg(data))
     })
 }
 init()
