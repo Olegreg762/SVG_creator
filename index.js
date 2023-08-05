@@ -48,10 +48,10 @@ function write_svg(file_name, data){
     })
 }
 
-function init(){
+function questions(){
     inquirer.prompt(parameters).then(data => {
         console.log(data);
         write_svg("logo.svg",generate_svg(data))
     })
 }
-init()
+questions()
