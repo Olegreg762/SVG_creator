@@ -25,13 +25,13 @@ const parameters =[
     {
         type: "input",
         name: "color",
-        message: "What Color Should The SVG Be?",
+        message: "What Color Should The SVG Be? If Using Hex Color Include #",
         validate: validate_input
     },
     {
         type: "input",
         name: "font",
-        message: "What would you like the Font Color to be?",
+        message: "What would you like the Font Color to be? If Using Hex Color Include #",
         validate: validate_input
     },
     {
@@ -51,7 +51,7 @@ function write_svg(file_name, data){
 function questions(){
     inquirer.prompt(parameters).then(data => {
         console.log(data);
-        write_svg("logo.svg",generate_svg(data))
+        write_svg(`${data.shape}_logo.svg`,generate_svg(data))
     })
 }
 questions()

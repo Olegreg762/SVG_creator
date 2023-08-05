@@ -1,0 +1,5 @@
+
+    <svg width="300" height="200">
+        <rect x="0" y="0" width="300" height="200" fill="#a7eafd"></rect>
+        <text x="150" y="100" alignment-baseline="middle" fill="#95097e" text-anchor="middle" font-size="20">ABC</text>
+    </svg>

@@ -1,5 +1,0 @@
-
-    <svg width="300" height="200">
-        <polygon points="100,0 200,200 0,200" fill="green"></polygon>
-        <text x="100" y="150" alignment-baseline="middle" fill="red" text-anchor="middle" font-size="20">opa</text>
-    </svg>

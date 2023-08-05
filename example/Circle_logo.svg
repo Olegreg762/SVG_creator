@@ -1,0 +1,5 @@
+
+    <svg width="300" height="200">
+        <circle cx="100" cy="100" r="100" fill="blue"></circle>
+    <text x="100" y="100" alignment-baseline="middle" fill="red" text-anchor="middle" font-size="20">MCR</text>
+    </svg>
