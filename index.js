@@ -17,12 +17,6 @@ function validate_input_length(input){
 
 const parameters =[
     {
-        type: "input",
-        name: "name",
-        message: "What is The Name of Your Logo?",
-        validate: validate_input
-    },
-    {
         type: "list",
         name: "shape",
         message: "What Shape Would You Like?",
@@ -57,7 +51,7 @@ function write_svg(file_name, data){
 function init(){
     inquirer.prompt(parameters).then(data => {
         console.log(data);
-        write_svg(`${data.name}.svg`,generate_svg(data))
+        write_svg("logo.svg",generate_svg(data))
     })
 }
 init()
