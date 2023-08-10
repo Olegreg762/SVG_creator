@@ -23,6 +23,8 @@
 
   The use case for this project is To create a simple logo in SVG format using CLI.
 
+  [![screenshot](./images/screenshot.png)](https://olegreg762.github.io/SVG_creator/)
+
   ## License
 
   This Project is licensed under [MIT](https://opensource.org/licenses/MIT)
