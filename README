@@ -3,7 +3,7 @@
 
   ## Description
   
-  Use CLI to create a SVG file
+  Use CLI to create a SVG logo file
 
   ## Table of Contents
   * [Installation](#installation)
@@ -21,9 +21,10 @@
 
   ## Usage
 
-  The use case for this project is To create a simple logo in SVG format using CLI.
+  The use case for this project is to create a simple logo in SVG format using CLI.
 
-  [![screenshot](./images/screenshot.png)](https://olegreg762.github.io/SVG_creator/)
+  Link to Video Demonstration of Application ⬇️
+  [![screenshot](./lib/images/screenshot.png)](https://olegreg762.github.io/SVG_creator/)
 
   ## License
 
